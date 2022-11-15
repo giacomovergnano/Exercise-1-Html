@@ -1,0 +1,12 @@
+.main-container.post {
+  grid-template-areas: 
+            ". hd hd hd hd ."
+            ". main main main main ."
+            ". ft ft ft ft .";
+  grid-template-columns: 4em 1fr 1fr 1fr 1fr 4em;
+}
+
+.post img {
+  width: 100%;
+  margin: 1em 0;
+}

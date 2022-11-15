@@ -1,3 +1,7 @@
+@import url(normalize.css);
+@import url(fonts.css);
+@import url(post.css);
+
 :root {
 	--font: 'HKGrotesk';
   --type-color: #000;
@@ -32,30 +36,6 @@
 	}
 }
 
-@font-face {
-	font-family: 'HKGrotesk';
-	src: url('../web-fonts/HKGrotesk-Regular.woff') format('woff'), url('../web-fonts/HKGrotesk-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face{
-  font-family:'HKGrotesk';
-  src:url('../web-fonts/HKGrotesk-Medium.woff') format('woff'),url('../web-fonts/HKGrotesk-Medium.woff2') format('woff2');
-  font-weight:500;
-  font-style:normal;
-  font-display:swap
-}
-
-@font-face{
-  font-family:'HKGrotesk';
-  src:url('../web-fonts/HKGrotesk-Bold.woff') format('woff'),url('../web-fonts/HKGrotesk-Bold.woff2') format('woff2');
-  font-weight:700;
-  font-style:normal;
-  font-display:swap
-}
-
 html {
   /* Adjust font size */
   font-size: 100%;
@@ -82,11 +62,6 @@ header a:hover {
   text-decoration: underline;
 }
 
-h1 {
-  font-size: calc(var(--base-font-size) * 1.5);
-  font-weight: normal;
-  margin: 0;
-}
 
 button {
   bottom: 0.5em;
@@ -166,18 +141,6 @@ button:hover {
   margin: 0 auto;
   }
 
-.main-container.post {
-  grid-template-areas: 
-            ". hd hd hd hd ."
-            ". main main main main ."
-            ". ft ft ft ft .";
-  grid-template-columns: 4em 1fr 1fr 1fr 1fr 4em;
-}
-
-.post img {
-  width: 100%;
-  margin: 1em 0;
-}
 
 .author {
   display: flex;
